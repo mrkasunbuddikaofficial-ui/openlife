@@ -1,0 +1,6 @@
+{
+  "name": "Open Life",
+  "description": "An adult social network designed for a niche lifestyle community featuring role-based interactions, home feed sharing, verifications, challenges, and admin tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
