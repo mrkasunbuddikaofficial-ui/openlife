@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-serif: "Georgia", serif;
+
+  --color-brand-bg: #0a0a0a;
+  --color-brand-surface: #141414;
+  --color-brand-primary: #8b0000;
+  --color-brand-accent: #d4af37;
+  --color-brand-text: #ffffff;
+  --color-brand-text-dim: #999999;
+  --color-brand-border: rgba(212, 175, 55, 0.2);
+  --color-brand-glass: rgba(255, 255, 255, 0.03);
+}
+
+/* Sophisticated Dark UI Utility Classes */
+.sophisticated-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #d4af37;
+  border-left: 3px solid #8b0000;
+  padding-left: 10px;
+}
+
+.sophisticated-post-card {
+  background: #141414;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+}
+
+.sophisticated-challenge-card {
+  background: linear-gradient(135deg, #1a0a0a 0%, #0a0a0a 100%);
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+}
+
+.sophisticated-verification-banner {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px dashed #d4af37;
+  border-radius: 8px;
+}
+
+.sophisticated-btn-primary {
+  background: #8b0000;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.sophisticated-btn-primary:hover {
+  background: #a30000;
+  box-shadow: 0 0 12px rgba(139, 0, 0, 0.4);
+}
+
+.sophisticated-stat-box {
+  background: #141414;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 8px;
+}
+
+/* Custom Animation Utility Classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translate(-50%, -20px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out 2;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #8b0000;
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
